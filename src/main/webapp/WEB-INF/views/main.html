@@ -1,73 +1,306 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <title>CSS 그리드 예시</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>상품 리스트 예시</title>
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+          crossorigin="anonymous"
+  />
+
   <style>
-
-
-    * {
-      margin: 0;
-      padding:0;
-    }
-
-    /* 그리드 컨테이너 설정 */
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto 200px auto auto;
-      grid-template-areas:
-          "header"
-          "banner"
-          "product"
-          "membership"
-          "footer";
-      gap: 20px;
-    }
-
-    /* 각 그리드 아이템 설정 */
-
-    .banner {
-      grid-area: banner;
-      background-color: #ccc;
-      padding: 200px;
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* 가운데 정렬 */
+      padding: 0 20px; /* 페이지 양옆에 20px 여백 추가 */
     }
 
     .product {
-      grid-area: product;
-      background-color: #fff;
-      padding: 600px;
+      /* width: calc(25% - 20px); 한 줄에 4개의 상품 */
+      width: 314px;
+      margin: 20px;
+      box-sizing: border-box;
+      padding: 0;
+      border: none;
     }
 
-    .membership {
-      grid-area: membership;
-      background-color: #ccc;
-      padding: 60px;
+    .product img {
+      position: relative;
+      display: block;
     }
 
+    .product-info {
+      margin-top: 10px;
+      font-size: 14px;
+    }
 
+    .product-name {
+      display: inline-block;
+      width: 80%;
+      margin-bottom: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .price {
+      margin-bottom: 5px;
+    }
+
+    .price strong {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      margin-right: 5px;
+    }
+
+    .original-price {
+      font-size: 14px;
+      color: #999;
+      text-decoration: line-through;
+      margin-right: 5px;
+    }
+
+    .discount-rate {
+      font-size: 14px;
+      color: green;
+    }
+
+    .tag-wrap {
+      margin-bottom: 5px;
+    }
+
+    .tag-wrap span {
+      background-color: #ddd;
+      color: #333;
+      padding: 2px 5px;
+      margin-right: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+
+    .star-wrap {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #999;
+      display: flex;
+      align-items: center;
+    }
+
+    .star-wrap i {
+      color: green;
+    }
+
+    .star-rating {
+      margin-left: 5px;
+    }
+
+    .star-wrap .heart-icon {
+      margin-left: auto;
+    }
+
+    .star-wrap .heart-icon i {
+      color: #999;
+      font-size: 24px;
+    }
   </style>
 </head>
+
 <body>
-
-<div class="grid-container">
-  <div class="banner">
-    <h1>d이건 테스트입니다 현선이가 작성완료</h1>
-    <h3>으앙아아  머지 전 입니다 개어렵네</h3>
-    <h2>Banner</h2>
-
-  </div>
-  <div class="product">
-    <h2>Product</h2>
-  </div>
-  <div class="membership">
-    <h2>Membership</h2>
-
-    <h1> 멤버십 작성완료 </h1>
-
-
-    <h1>문제 해결하고 싶어요</h1>
-  </div>
+<div class="title">
+  <h2>지금이 쇼핑찬스</h2>
 </div>
+
+<!-- 상품 리스트 -->
+<div class="product-list">
+  <!--상품 내용 전체-->
+  <!--상품1-->
+  <div class="product">
+    <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+
+    <div class="product-info">
+      <span class="product-name">상품 이름</span>
+      <p class="price">
+        <strong class="unit">가격</strong>
+        <span class="original-price">할인 전 가격</span>
+        <span class="discount-rate">할인율</span>
+      </p>
+      <div class="tag-wrap"></div>
+      <div class="star-wrap">
+        <i class="fas fa-star"></i>
+        <span class="star-rating">평점 (리뷰 수)</span>
+        <span class="heart-icon">
+              <i class="far fa-heart"></i>
+            </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 다른 상품들 -->
+  <!--상품2-->
+  <div class="product">
+    <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+
+    <div class="product-info">
+      <span class="product-name">상품 이름</span>
+      <p class="price">
+        <strong class="unit">가격</strong>
+        <span class="original-price">할인 전 가격</span>
+        <span class="discount-rate">할인율</span>
+      </p>
+      <div class="tag-wrap"></div>
+      <div class="star-wrap">
+        <i class="fas fa-star"></i>
+        <span class="star-rating">평점 (리뷰 수)</span>
+        <span class="heart-icon">
+              <i class="far fa-heart"></i>
+            </span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--상품3-->
+  <div class="product">
+    <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+
+    <div class="product-info">
+      <span class="product-name">상품 이름</span>
+      <p class="price">
+        <strong class="unit">가격</strong>
+        <span class="original-price">할인 전 가격</span>
+        <span class="discount-rate">할인율</span>
+      </p>
+      <div class="tag-wrap"></div>
+      <div class="star-wrap">
+        <i class="fas fa-star"></i>
+        <span class="star-rating">평점 (리뷰 수)</span>
+        <span class="heart-icon">
+              <i class="far fa-heart"></i>
+            </span>
+      </div>
+    </div>
+  </div>
+
+  <!--상품4-->
+  <div class="product">
+    <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+
+    <div class="product-info">
+      <span class="product-name">상품 이름</span>
+      <p class="price">
+        <strong class="unit">가격</strong>
+        <span class="original-price">할인 전 가격</span>
+        <span class="discount-rate">할인율</span>
+      </p>
+      <div class="tag-wrap"></div>
+      <div class="star-wrap">
+        <i class="fas fa-star"></i>
+        <span class="star-rating">평점 (리뷰 수)</span>
+        <span class="heart-icon">
+              <i class="far fa-heart"></i>
+            </span>
+      </div>
+    </div>
+  </div>
+
+
+  <!--상품5-->
+  <div class="product">
+    <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+
+    <div class="product-info">
+      <span class="product-name">상품 이름</span>
+      <p class="price">
+        <strong class="unit">가격</strong>
+        <span class="original-price">할인 전 가격</span>
+        <span class="discount-rate">할인율</span>
+      </p>
+      <div class="tag-wrap"></div>
+      <div class="star-wrap">
+        <i class="fas fa-star"></i>
+        <span class="star-rating">평점 (리뷰 수)</span>
+        <span class="heart-icon">
+              <i class="far fa-heart"></i>
+            </span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--상품6-->
+  <div class="product">
+    <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+
+    <div class="product-info">
+      <span class="product-name">상품 이름</span>
+      <p class="price">
+        <strong class="unit">가격</strong>
+        <span class="original-price">할인 전 가격</span>
+        <span class="discount-rate">할인율</span>
+      </p>
+      <div class="tag-wrap"></div>
+      <div class="star-wrap">
+        <i class="fas fa-star"></i>
+        <span class="star-rating">평점 (리뷰 수)</span>
+        <span class="heart-icon">
+              <i class="far fa-heart"></i>
+            </span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--상품7-->
+  <div class="product">
+    <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+
+    <div class="product-info">
+      <span class="product-name">상품 이름</span>
+      <p class="price">
+        <strong class="unit">가격</strong>
+        <span class="original-price">할인 전 가격</span>
+        <span class="discount-rate">할인율</span>
+      </p>
+      <div class="tag-wrap"></div>
+      <div class="star-wrap">
+        <i class="fas fa-star"></i>
+        <span class="star-rating">평점 (리뷰 수)</span>
+        <span class="heart-icon">
+              <i class="far fa-heart"></i>
+            </span>
+      </div>
+    </div>
+  </div>
+
+  <!--상품8-->
+  <div class="product">
+    <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+
+    <div class="product-info">
+      <span class="product-name">상품 이름</span>
+      <p class="price">
+        <strong class="unit">가격</strong>
+        <span class="original-price">할인 전 가격</span>
+        <span class="discount-rate">할인율</span>
+      </p>
+      <div class="tag-wrap"></div>
+      <div class="star-wrap">
+        <i class="fas fa-star"></i>
+        <span class="star-rating">평점 (리뷰 수)</span>
+        <span class="heart-icon">
+              <i class="far fa-heart"></i>
+            </span>
+      </div>
+    </div>
+  </div>
 
 </div>
 
