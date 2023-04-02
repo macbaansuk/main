@@ -1,20 +1,32 @@
+.title h2 {
+    padding: 0 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #222222;
+}
 
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* 상품 사이에 동일한 공간 배치 */
+    padding: 0 200px; /* 페이지 양옆에 20px 여백 추가 */
+    box-sizing: border-box;
+}
 
- .product-list {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center; /* 가운데 정렬 */
-     padding: 0 20px; /* 페이지 양옆에 20px 여백 추가 */
- }
+.product-row {
+    display: flex;
+    justify-content: space-between; /* 상품 사이에 동일한 공간 배치 */
+    width: 100%;
+    margin-bottom: 20px; /* 상품 행 아래에 20px 여백 추가 */
+}
 
 .product {
-    /* width: calc(25% - 20px); 한 줄에 4개의 상품 */
     width: 314px;
-    margin: 20px;
     box-sizing: border-box;
     padding: 0;
     border: none;
 }
+
 
 .product img {
     position: relative;
@@ -33,9 +45,11 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 16px;
 }
 
 .price {
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
@@ -54,8 +68,8 @@
 }
 
 .discount-rate {
-    font-size: 14px;
-    color: green;
+    font-size: 16px;
+    color: red;
 }
 
 .tag-wrap {
