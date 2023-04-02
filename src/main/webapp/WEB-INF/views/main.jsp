@@ -38,6 +38,9 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
 <body>
 <jsp:include page="header.jsp" />
 <div class="grid-container">
+
+<%--메인 배너 시작--%>
+
   <div class="banner-container">
     <div class="banner">
       <section class="home-visual">
@@ -47,7 +50,7 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
               <!--SET-->
               <li class="swiper-slide" data-slide-index="1" style="width: 1920px;">
                 <div class="imgWrap">
-                  <img class="swpier-lazy"src="./image/main_1.jpg" alt="이미지 없음">
+                  <img class="swpier-lazy"src="main_1.jpg" alt="이미지 없음">
                 </div>
                 <div class="cntWrap">
                   <div class="inner">
@@ -71,7 +74,7 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
               <!--SET-->
               <li class="swiper-slide" data-slide-index="2" style="width: 1920px;">
                 <div class="imgWrap">
-                  <img class="swpier-lazy"src="./image/main_2.jpg" alt="이미지 없음">
+                  <img class="swpier-lazy"src="main_2.jpg" alt="이미지 없음">
                 </div>
                 <div class="cntWrap">
                   <div class="inner">
@@ -95,7 +98,7 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
               <!--SET-->
               <li class="swiper-slide" data-slide-index="3" style="width: 1920px;">
                 <div class="imgWrap">
-                  <img class="swpier-lazy"src="./image/main_3.jpg" alt="이미지 없음">
+                  <img class="swpier-lazy"src="main_3.jpg" alt="이미지 없음">
                 </div>
                 <div class="cntWrap">
                   <div class="inner">
@@ -119,7 +122,7 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
               <!--SET-->
               <li class="swiper-slide" data-slide-index="4" style="width: 1920px;">
                 <div class="imgWrap">
-                  <img class="swpier-lazy"src="./image/main_4.jpg" alt="이미지 없음">
+                  <img class="swpier-lazy"src="main_4.jpg" alt="이미지 없음">
                 </div>
                 <div class="cntWrap">
                   <div class="inner">
@@ -145,12 +148,10 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
 
           </div>
           <div class="slideControl">
+            <div class="swiper-pagination"></div>
             <div class="nav_prev">
               <div class="inner">
-                <div class="swiper-pagination">
-                  <!-- 0
-                  <em>/10</em> -->
-                </div>
+
                 <button type="button" class="prev" tabindex="0" role="button" aria-label="Previous slide">
 
                   이전
@@ -159,10 +160,9 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
             </div>
             <div class="nav_next">
               <div class="inner">
-                <div class="swiper-pagination">
-                  <!-- 01
-                  <em>/10</em> -->
-                </div>
+                <!-- <div class="swiper-pagination"> -->
+
+                <!-- </div> -->
                 <button type="button" class="next" tabindex="0" role="button" aria-label="Next slide">
 
                   다음
@@ -208,8 +208,10 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
 
       })
 
-
     </script>
+
+<%-- 메인 배너 끝 --%>
+
 <%-- 상품 시작--%>
   <div class="product_main">
     <div class="title">
