@@ -1,7 +1,5 @@
 .title h2 {
-    padding: 0 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 0 12%;
     color: #222222;
 }
 
@@ -9,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* 상품 사이에 동일한 공간 배치 */
-    padding: 0 200px; /* 페이지 양옆에 20px 여백 추가 */
+    padding: 0 12%; /* 페이지 양옆에 20px 여백 추가 */
     box-sizing: border-box;
 }
 
@@ -17,7 +15,7 @@
     display: flex;
     justify-content: space-between; /* 상품 사이에 동일한 공간 배치 */
     width: 100%;
-    margin-bottom: 20px; /* 상품 행 아래에 20px 여백 추가 */
+    margin-bottom: 2%; /* 상품 행 아래에 20px 여백 추가 */
 }
 
 .product {
