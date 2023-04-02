@@ -75,6 +75,7 @@
             padding: 0 0 0 10px;
             width: 250px; height: auto;
             text-align: center;
+            opacity: 0.45;
         }
         #footer .ftinfo{display: flex; justify-content: space-between; padding: 0 0 0 54px;margin: 0 auto; min-width: 1024px; max-width: 1280px;}
         #footer .ftinfo .info {overflow: hidden;margin: 25px 0 0;font: 14px/1.7 'SDNeoL', 'notoL';color: #777;}
@@ -102,7 +103,7 @@
 <footer id="footer">
     <div class="menuWrap">
         <div class="menu">
-            <div><img id="ftImg" src='./image/logo.png'></div>
+            <div><img id="ftImg" src='./image/logo_black.png'></div>
             <nav role="navigation" aria-label="Customer service">
                 <a href="#" onclick="termsOpen('이용약관', 'termsService'); return false;">서비스 이용약관</a>
                 <!-- <a href="#" onclick="termsOpen('개인정보처리방침', 'terms17'); return false;"><strong>개인정보처리방침</strong></a> -->
