@@ -27,10 +27,13 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
 
 
 
-    .membership {
-      grid-area: membership;
-      background-color: #ccc;
-      padding: 60px;
+    #membership {
+      display: block;
+      margin: 0 auto;
+      width: 60%;
+      height: auto;
+      padding: 100px 0 100px 0px;
+
     }
     .grid-container {
      min-height: 100%;
@@ -247,12 +250,7 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
 
   </div>
   <div class="membership">
-    <h2>Membership</h2>
-
-    <h1> 멤버십 작성완료 </h1>
-
-
-    <h1>문제 해결하고 싶어요</h1>
+   <img id="membership" src="./image/membership.jpg">
   </div>
 </div>
 
