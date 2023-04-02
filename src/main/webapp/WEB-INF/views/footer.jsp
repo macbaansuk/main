@@ -128,9 +128,8 @@
                 <span class="non">대표이사 도비</span><br>
                 <!-- <span>사업자 등록번호 106-86-68127</span> -->
                 <span>제품 문의 : 02-737-8945</span>
-                <span class="non">FAX 02-737-8945</span><br>
-                <span>이메일 주소 <a href="mailTo:innisfree@innisfree.com">dobyisfree@dobyisfree.com</a></span>
-                <span>비즈니스제휴/입점문의 <a href="mailTo:partner.biz@innisfree.com">dobyisfree.biz@innisfree.com</a></span>
+                <span class="non">FAX 02-737-8945</span><br><span>이메일 주소 <a href="mailTo:innisfree@innisfree.com">dobbyisfree@dobyisfree.com</a></span>
+                <span>비즈니스제휴/입점문의 <a href="mailTo:partner.biz@innisfree.com">dobbyisfree.biz@innisfree.com</a></span>
                 <br/>
                 <span><a href="#" onclick="layerOpen('emailRefusal');return false;">이메일 주소 무단 수집 거부</a></span>
                 <span>개인정보 보호책임자 </span>
