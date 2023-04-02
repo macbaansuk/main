@@ -6,7 +6,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
   <link rel="stylesheet" href="./css/product.css"/>
-
+  <!-- SWIPER 외부 라이브러리 연결-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/mainBanner.css"/>
 
   <style>
 
@@ -14,15 +17,6 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
     * {
       margin: 0;
       padding:0;
-    }
-
-
-
-
-    .banner {
-      grid-area: banner;
-      background-color: #ccc;
-      padding: 200px;
     }
 
 
@@ -44,12 +38,179 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
 <body>
 <jsp:include page="header.jsp" />
 <div class="grid-container">
-  <div class="banner">
-    <h1>d이건 테스트입니다 현선이가 작성완료</h1>
-    <h3>으앙아아  머지 전 입니다 개어렵네</h3>
-    <h2>Banner</h2>
+  <div class="banner-container">
+    <div class="banner">
+      <section class="home-visual">
+        <div class="slideWrap">
+          <div class="swiper-container">
+            <ul class="swiper-wrapper">
+              <!--SET-->
+              <li class="swiper-slide" data-slide-index="1" style="width: 1920px;">
+                <div class="imgWrap">
+                  <img class="swpier-lazy"src="./image/main_1.jpg" alt="이미지 없음">
+                </div>
+                <div class="cntWrap">
+                  <div class="inner">
+                                  <span class="tag-card">
+                                        <span class="cardSt_1">24%</span>
+                                        <span class="cardSt_2">베스트</span>
+                                  </span>
+                    <div class="name">
+                      <span style="font-family:NanumSquareNeo-dEb">수분 잠금 확실히하고</span>
+                      <span style="font-family:NanumSquareNeo-dEb">깨끗하고 촉촉한 피부로</span>
+                    </div>
+                    <div class="option">
+                                  <span class="banner-price">
+                                      <em class="tCost">31,000</em>
+                                      <em class="tUnit">23,500</em>
+                                  </span>
+                    </div> <!-- 옵션-->
+                  </div> <!-- 이너 -->
+                </div> <!--센터렙-->
+              </li>
+              <!--SET-->
+              <li class="swiper-slide" data-slide-index="2" style="width: 1920px;">
+                <div class="imgWrap">
+                  <img class="swpier-lazy"src="./image/main_2.jpg" alt="이미지 없음">
+                </div>
+                <div class="cntWrap">
+                  <div class="inner">
+                                  <span class="tag-card">
+                                        <!-- <span class="cardSt_1">24%</span> -->
+                                        <span class="cardSt_2">신규</span>
+                                  </span>
+                    <div class="name">
+                      <span style="font-family:NanumSquareNeo-dEb">수분 잠금 확실히하고</span>
+                      <span style="font-family:NanumSquareNeo-dEb">깨끗하고 촉촉한 피부로</span>
+                    </div>
+                    <div class="option">
+                                  <span class="banner-price">
+                                      <em class="tCost">31,000</em>
+                                      <em class="tUnit">23,500</em>
+                                  </span>
+                    </div> <!-- 옵션-->
+                  </div> <!-- 이너 -->
+                </div> <!--센터렙-->
+              </li>
+              <!--SET-->
+              <li class="swiper-slide" data-slide-index="3" style="width: 1920px;">
+                <div class="imgWrap">
+                  <img class="swpier-lazy"src="./image/main_3.jpg" alt="이미지 없음">
+                </div>
+                <div class="cntWrap">
+                  <div class="inner">
+                                    <span class="tag-card">
+                                          <!-- <span class="cardSt_1">24%</span> -->
+                                          <span class="cardSt_2">최대30%</span>
+                                    </span>
+                    <div class="name">
+                      <span style="font-family:NanumSquareNeo-dEb">수분 잠금 확실히하고</span>
+                      <span style="font-family:NanumSquareNeo-dEb">깨끗하고 촉촉한 피부로</span>
+                    </div>
+                    <div class="option">
+                                    <span class="banner-price">
+                                        <em class="tCost">31,000</em>
+                                        <em class="tUnit">23,500</em>
+                                    </span>
+                    </div> <!-- 옵션-->
+                  </div> <!-- 이너 -->
+                </div> <!--센터렙-->
+              </li>
+              <!--SET-->
+              <li class="swiper-slide" data-slide-index="4" style="width: 1920px;">
+                <div class="imgWrap">
+                  <img class="swpier-lazy"src="./image/main_4.jpg" alt="이미지 없음">
+                </div>
+                <div class="cntWrap">
+                  <div class="inner">
+                                    <span class="tag-card">
+                                          <span class="cardSt_1">25%</span>
+                                          <span class="cardSt_2">신제품</span>
+                                    </span>
+                    <div class="name">
+                      <span style="font-family:NanumSquareNeo-dEb">수분 잠금 확실히하고</span>
+                      <span style="font-family:NanumSquareNeo-dEb">깨끗하고 촉촉한 피부로</span>
+                    </div>
+                    <div class="option">
+                                    <span class="banner-price">
+                                        <em class="tCost">31,000</em>
+                                        <em class="tUnit">23,500</em>
+                                    </span>
+                    </div> <!-- 옵션-->
+                  </div> <!-- 이너 -->
+                </div> <!--센터렙-->
+              </li>
+              <!--SET-->
+            </ul>
 
-  </div>
+          </div>
+          <div class="slideControl">
+            <div class="nav_prev">
+              <div class="inner">
+                <div class="swiper-pagination">
+                  <!-- 0
+                  <em>/10</em> -->
+                </div>
+                <button type="button" class="prev" tabindex="0" role="button" aria-label="Previous slide">
+
+                  이전
+                </button>
+              </div >
+            </div>
+            <div class="nav_next">
+              <div class="inner">
+                <div class="swiper-pagination">
+                  <!-- 01
+                  <em>/10</em> -->
+                </div>
+                <button type="button" class="next" tabindex="0" role="button" aria-label="Next slide">
+
+                  다음
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+
+
+    </div>
+    <script >
+
+      const swiper = new Swiper('.swiper-container', {
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        navigation: {
+          prevEl : '.nav_prev',
+          nextEl : '.nav_next',
+        },
+
+        speed: 800,
+
+        loop : true,
+
+        autoplay : {
+          delay : 3000,
+          pauseOnMouseEnter : false,
+          disableOnInteraction: false,
+
+        },
+
+        slidesPerView : 1,
+
+
+      })
+
+
+    </script>
+<%-- 상품 시작--%>
   <div class="product_main">
     <div class="title">
       <h2>지금이 쇼핑찬스</h2>
