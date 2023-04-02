@@ -45,7 +45,7 @@
         #menu {
             margin: 20px;
             flex: 1;
-            margin-left: 500px;
+            margin-left: 250px;
             border-right: 1px solid rgba(231, 230, 230, 0.673);
         }
 
