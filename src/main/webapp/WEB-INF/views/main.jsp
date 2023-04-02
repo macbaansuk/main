@@ -50,7 +50,7 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
               <!--SET-->
               <li class="swiper-slide" data-slide-index="1" style="width: 1920px;">
                 <div class="imgWrap">
-                  <img class="swpier-lazy"src="main_1.jpg" alt="이미지 없음">
+                  <img class="swpier-lazy"src="./image/main_1.jpg" alt="이미지 없음">
                 </div>
                 <div class="cntWrap">
                   <div class="inner">
@@ -74,7 +74,7 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
               <!--SET-->
               <li class="swiper-slide" data-slide-index="2" style="width: 1920px;">
                 <div class="imgWrap">
-                  <img class="swpier-lazy"src="main_2.jpg" alt="이미지 없음">
+                  <img class="swpier-lazy"src="./image/main_2.jpg" alt="이미지 없음">
                 </div>
                 <div class="cntWrap">
                   <div class="inner">
@@ -98,7 +98,7 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
               <!--SET-->
               <li class="swiper-slide" data-slide-index="3" style="width: 1920px;">
                 <div class="imgWrap">
-                  <img class="swpier-lazy"src="main_3.jpg" alt="이미지 없음">
+                  <img class="swpier-lazy"src="./image/main_3.jpg" alt="이미지 없음">
                 </div>
                 <div class="cntWrap">
                   <div class="inner">
@@ -122,7 +122,7 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
               <!--SET-->
               <li class="swiper-slide" data-slide-index="4" style="width: 1920px;">
                 <div class="imgWrap">
-                  <img class="swpier-lazy"src="main_4.jpg" alt="이미지 없음">
+                  <img class="swpier-lazy"src="./image/main_4.jpg" alt="이미지 없음">
                 </div>
                 <div class="cntWrap">
                   <div class="inner">
