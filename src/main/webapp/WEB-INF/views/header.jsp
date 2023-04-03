@@ -25,7 +25,8 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      padding-right: 300px;
+      padding-right: 20%;
+      padding-left: 20%;
     }
 
     #login_menu span {
@@ -33,6 +34,7 @@
       margin-left: 23px;
       font-size: 14px;
       font-weight: 500;
+
     }
 
     #logo_search_box {
@@ -48,8 +50,8 @@
       height: 50px;
       display: flex;
       align-items: center;
-      padding: 0 20px;
-      padding-left: 290px;
+      padding-right: 20%;
+      padding-left: 19.5%;
       border-bottom: 1px solid #7777779e;
     }
 
@@ -60,6 +62,10 @@
       font-weight: 550;
     }
 
+    #logo_search_box{
+      padding-right: 20%;
+      padding-left: 20%;
+    }
 
     #logo_search_box h1 {
       display: flex;
