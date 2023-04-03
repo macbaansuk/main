@@ -34,6 +34,28 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
      min-height: 100%;
     }
 
+    .pdImg {
+      position: relative;
+      display: inline-block;
+    }
+
+    .cart_icon {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      /* Add any padding or margin you need for proper positioning */
+      padding: 5px;
+      background: #555555;
+      width: 40px;
+      height:40px;
+      opacity: 0.6;
+    }
+
+    .icon {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
   </style>
 </head>
 <body>
@@ -226,7 +248,12 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
         <!--상품 내용 전체-->
         <!--상품1-->
         <div class="product">
-          <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+          <div class="pdImg">
+            <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+            <div class="cart_icon">
+              <img class="icon" src="./image/003.png"  />
+            </div>
+          </div>
 
           <div class="product-info">
             <span class="product-name">상품 이름</span>
@@ -249,7 +276,12 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
         <!-- 다른 상품들 -->
         <!--상품2-->
         <div class="product">
-          <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+          <div class="pdImg">
+            <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+            <div class="cart_icon">
+              <img class="icon" src="./image/003.png"  />
+            </div>
+          </div>
 
           <div class="product-info">
             <span class="product-name">상품 이름</span>
@@ -273,7 +305,12 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
 
         <!--상품3-->
         <div class="product">
-          <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+          <div class="pdImg">
+            <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+            <div class="cart_icon">
+              <img class="icon" src="./image/003.png"  />
+            </div>
+          </div>
 
           <div class="product-info">
             <span class="product-name">상품 이름</span>
@@ -294,9 +331,33 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
         </div>
 
         <!--상품4-->
-        <div class="product">
-          <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+<%--        <div class="product">--%>
+<%--          <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />--%>
 
+<%--          <div class="product-info">--%>
+<%--            <span class="product-name">상품 이름</span>--%>
+<%--            <p class="price">--%>
+<%--              <strong class="unit">가격</strong>--%>
+<%--              <span class="original-price">할인 전 가격</span>--%>
+<%--              <span class="discount-rate">할인율</span>--%>
+<%--            </p>--%>
+<%--            <div class="tag-wrap"></div>--%>
+<%--            <div class="star-wrap">--%>
+<%--              <i class="fas fa-star"></i>--%>
+<%--              <span class="star-rating">평점 (리뷰 수)</span>--%>
+<%--              <span class="heart-icon">--%>
+<%--              <i class="far fa-heart"></i>--%>
+<%--            </span>--%>
+<%--            </div>--%>
+<%--          </div>--%>
+
+        <div class="product">
+          <div class="pdImg">
+          <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+            <div class="cart_icon">
+              <img class="icon" src="./image/003.png"  />
+            </div>
+          </div>
           <div class="product-info">
             <span class="product-name">상품 이름</span>
             <p class="price">
@@ -314,13 +375,27 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
             </div>
           </div>
         </div>
+
+
+
+
+
+
+
+
+
       </div>
 
       <!-- 두 번째 상품 행 -->
       <div class="product-row">
         <!--상품5-->
         <div class="product">
-          <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+          <div class="pdImg">
+            <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+            <div class="cart_icon">
+              <img class="icon" src="./image/cart_icon.png"  />
+            </div>
+          </div>
 
           <div class="product-info">
             <span class="product-name">상품 이름</span>
@@ -344,7 +419,12 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
 
         <!--상품6-->
         <div class="product">
-          <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+          <div class="pdImg">
+            <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+            <div class="cart_icon">
+              <img class="icon" src="./image/cart_icon.png"  />
+            </div>
+          </div>
 
           <div class="product-info">
             <span class="product-name">상품 이름</span>
@@ -368,7 +448,13 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
 
         <!--상품7-->
         <div class="product">
-          <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+          <div class="pdImg">
+            <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+            <div class="cart_icon">
+              <img class="icon" src="./image/cart_icon.png"  />
+            </div>
+          </div>
+
 
           <div class="product-info">
             <span class="product-name">상품 이름</span>
@@ -390,7 +476,12 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
 
         <!--상품8-->
         <div class="product">
-          <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+          <div class="pdImg">
+            <img src="https://via.placeholder.com/314x314" alt="상품 이미지" />
+            <div class="cart_icon">
+              <img class="icon" src="./image/cart_icon.png"  />
+            </div>
+          </div>
 
           <div class="product-info">
             <span class="product-name">상품 이름</span>
