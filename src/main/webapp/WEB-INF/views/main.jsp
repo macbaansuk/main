@@ -10,6 +10,7 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./css/mainBanner.css"/>
+  <link rel="stylesheet" href="./css/membership.css"/>
 
   <style>
 
@@ -412,10 +413,39 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
     </div>
 
   </div>
-  <div class="membership">
-   <img id="membership" src="./image/membership.jpg">
-  </div>
+
+<%-- 멤버십 시작 --%>
+    <section class="mainMemberShipInfo">
+      <h2 class="subTitle">도비이즈프리 멤버십 혜택 안내</h2>
+      <div class="contWrap">
+        <p class="subTxt">도비이즈프리 멤버십 회원이 되시면 도비이즈프리에서 제공하는 다양한 혜택을 받으실 수 있습니다.</p>
+        <ul class="list">
+          <li>
+            <span class="mb-icon"><img src="./image/mb_1.png" alt="멤버십데이"></span>
+            <strong class="tit">멤버십 혜택</strong>
+            <span class="txt">등급별 적립혜택</span>
+          </li>
+
+          <li>
+            <span class="mb-icon"><img src="./image/mb_2.png" alt="구매 적립"></span>
+            <strong class="tit">구매 적립</strong>
+            <span class="txt">구매 금액 1% 적립</span>
+          </li>
+          <li>
+            <span class="mb-icon"><img src="./image/mb_3.png" alt="생일 혜택"></span>
+            <strong class="tit">생일 혜택</strong>
+            <span class="txt">생일 쿠폰 지급</span>
+          </li>
+
+        </ul>
+        <!-- <a href="/kr/ko/GreenteaClubMembership.do" class="pdtMore">혜택 더보기</a> -->
+      </div>
+    </section>
+
+
+<%-- 멤버십 끝 --%>
 </div>
+
 
 <jsp:include page="footer.jsp" />
 
