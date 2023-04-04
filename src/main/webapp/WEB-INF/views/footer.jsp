@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: hntim
-  Date: 2023-04-01
-  Time: 오후 3:39
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="ko">
@@ -18,11 +12,11 @@
             margin:0;
             padding: 0;
         }
-        #bd  a{
+        #footer  a{
             text-decoration: none;
             color: #777;
         }
-        #bd {
+        #footer {
             overflow-x: hidden;
             height: 100%;
             color: #777;
@@ -99,7 +93,7 @@
 
     </style>
 </head>
-<body id="bd">
+<body >
 <footer id="footer">
     <div class="menuWrap">
         <div class="menu">
