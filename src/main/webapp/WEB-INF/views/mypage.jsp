@@ -19,8 +19,6 @@
 
         #mypageTop {
             height: 150px;
-
-
         }
 
         #member {

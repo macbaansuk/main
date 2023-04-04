@@ -19,14 +19,18 @@
       padding: 0;
     }
 
+    #login_menu span a {text-decoration: none;}
+    #login_menu span a:visited { color: #777777; text-decoration: none; }
+
+
     #login_menu {
       background-color: rgba(231, 230, 230, 0.673);
       height: 40px;
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      padding-right: 20%;
-      padding-left: 20%;
+      padding-right: 17%;
+      padding-left: 17%;
     }
 
     #login_menu span {
@@ -50,8 +54,8 @@
       height: 50px;
       display: flex;
       align-items: center;
-      padding-right: 20%;
-      padding-left: 19.5%;
+      padding-right: 17%;
+      padding-left: 16.5%;
       border-bottom: 1px solid #7777779e;
     }
 
@@ -63,8 +67,8 @@
     }
 
     #logo_search_box{
-      padding-right: 20%;
-      padding-left: 20%;
+      padding-right: 17%;
+      padding-left: 17%;
     }
 
     #logo_search_box h1 {
@@ -94,6 +98,8 @@
       font-size: 15px;
       margin-right: 10px;
       border: 0px;
+      outline: none;
+      padding-left: 10px;
     }
 
     #search_box img {
@@ -107,10 +113,10 @@
 <body>
 <header>
   <div id="login_menu">
-    <span>고객센터</span>
+    <span><a href="cs-notice">고객센터</a></span>
     <span>로그인</span>
     <span>회원가입</span>
-    <span>마이페이지</span>
+    <span><a href="mypage">마이페이지</a></span>
     <span>장바구니</span>
     <span id="cart_cnt">0</span>
   </div>
